@@ -27,7 +27,7 @@ h1{
     text-decoration: none;
     margin: 5px 10px 5px 10px;
 }
-header {
+.save-project {
     background-color: black;
     position: sticky;
     top: 0;
