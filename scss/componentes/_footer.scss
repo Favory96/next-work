@@ -1,0 +1,31 @@
+/*-------index-page------*/
+
+footer {
+    padding: 30px;
+    margin: 10;
+    background-color: black;
+
+    .footer-c {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+
+        h4 {
+            color: gold;
+            font-size: 40px;
+        }
+
+    }
+
+    a {
+        p {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            background-color: white 100%;
+        }
+    }
+}

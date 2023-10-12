@@ -1,0 +1,239 @@
+/*!-----index-page-----*/
+main {
+    .cuerpo1 {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        background-image: url(img/pino\2.0.jpg);
+        size: center;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+       @extend%flex-move;
+
+        h2 {
+            color: nth($color, 1);
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        div {
+            .idea {
+                color: nth($color, 3);
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+        }
+
+        div {
+            a {
+                text-decoration: none;
+                color: nth($color, 1);
+                background-color: nth($color, 2);
+                padding: 5px;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .cuerpo2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.822);
+        
+        div {
+            width: 50%;
+            margin: 50px;
+
+            h2 {
+                font-size: 30px;
+                color: nth($color, 3);
+                text-align: center;
+            }
+
+            p {
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Times New Roman', Times, serif;
+                color: nth($color, 3);
+            }
+        }
+        div{
+            img{
+                border-radius: 50% 0 0 0;
+            }
+        }
+
+    }
+}
+
+.whatsapp {
+    a {
+        img {
+            width: 80px;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+    }
+}
+
+/*!*------Nosotros-page------*/
+.grid-container2 {
+    width: 100%;
+    font-size: 100%;
+    border: solid 4px seagreen;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 230px 250px 150px;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "footer footer footer"
+    ;
+
+    .encabezado {
+        background-color: aqua;
+        grid-area: header;
+    }
+
+    .nav {
+        background-color: slategrey;
+        grid-area: nav;
+    }
+
+    .main {
+        background-color: blueviolet;
+        grid-area: main;
+    }
+
+    .aside {
+        background-color: thistle;
+        grid-area: aside;
+    }
+
+    .pie {
+        background-color: yellow;
+        grid-area: footer;
+    }
+}
+
+/*!*------Productos-page------*/
+
+.cuerpo-2p {
+    background-image: radial-gradient(circle, gold, black);
+
+    h2 {
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        background-color: gold;
+    }
+
+    .productos1 {
+        .producto-c {
+            display: flex;
+            flex-wrap: wrap;
+
+            div {
+                width: 300px;
+                height: 400px;
+                border: 2px solid gold;
+                text-align: center;
+                margin: 10px;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                h3 {
+                    color: gold;
+                    margin: 10px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: gold;
+                    background-color: black;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+/*!*------Distribucion-page------*/
+
+.grid-container {
+    border: solid 4px gold;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 5px;
+
+    .grid-items {
+        border: solid 4px gold;
+        display: grid;
+        color: black;
+        background-color: rgba(255, 217, 0, 0.356);
+        font-style: normal;
+        font-size: 60%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 20px;
+    }
+
+    .tercer-item {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .septimo-items {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+
+/*!------Contactos------*/
+.cuerpo5 {
+    background-image: linear-gradient(to left, black, gold);
+
+    .slide {
+        margin-top: 10px;
+        display: flex;
+        background-attachment: fixed;
+        object-fit: cover;
+        z-index: 1;
+
+        .slide img {
+            height: 65vh;
+            width: 80%;
+
+        }
+    }
+
+
+    .info-container {
+        @include flex( flex, space-around, 10px);
+        font-size: 20px;
+        color: white;
+
+        .form form div {
+            margin: map-get($margin, margin);
+        }
+
+    }
+
+    .mapa ¨{
+        margin: map-get($margin, margin);
+    }
+
+
+}
